@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">Matthew G. McCardle</a>
+            <a href="#home" class="nav-logo">Matthew Gorbold McCardle</a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
@@ -243,7 +243,7 @@
                 <h2 class="section-title">Education</h2>
                 <div class="education-timeline">
                     <div class="education-item">
-                        <div class="education-year">Expected: May 2027</div>
+                        <div class="education-year">August 2022 - May 2027</div>
                         <div class="education-content">
                             <h3 class="education-degree">Accelerated B.S./M.S. in Electrical Engineering</h3>
                             <h4 class="education-specialization">Specialization in High-Speed Digital Engineering</h4>
@@ -296,11 +296,15 @@
         <section id="projects" class="projects">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
-                <div class="projects-list">
+                <div class="projects-grid">
                     
                     <!-- Project 1 -->
-                    <div class="project-item">
-                        <h3 class="project-title">Custom Low-Noise Arduino Design and Validation</h3>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-microchip project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Custom Low-Noise Arduino Design and Validation</h3>
                         <p class="project-description">
                             Designed a custom Arduino-compatible PCB optimized to outperform commercial boards in terms of noise performance and signal integrity. Focused on clean schematic design, optimal layout with minimal cross-unders, and compact dimensions matching a commercial Arduino. Conducted comparative signal integrity tests—including rise/fall time and switching noise analysis—against a commercial board using slammer circuits and oscilloscope measurements. Identified layout-driven noise behaviors and proposed improvements, including repositioning decoupling capacitors for better power rail filtering.
                         </p>
@@ -321,11 +325,16 @@
                                 <i class="fas fa-file-alt"></i> Documentation
                             </a>
                         </div>
+                        </div>
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="project-item">
-                        <h3 class="project-title">Embedded Connect Four: STM32F4 Touch Interface</h3>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-gamepad project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Embedded Connect Four: STM32F4 Touch Interface</h3>
                         <p class="project-description">
                             Developed Connect Four game with a smart AI opponent in single player mode and two player mode. This project was coded in C and implemented an LCD touchscreen using SPI for communication and I2C for touch processing and real time interrupt triggered buttons on STM32F429I hardware. The hardware control uses GPIO for initialization and includes a timer and win count as shown in the attached images.
                         </p>
@@ -342,11 +351,16 @@
                                 <i class="fab fa-github"></i> Source Code
                             </a>
                         </div>
+                        </div>
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="project-item">
-                        <h3 class="project-title">Graduate-Level Instrumentation Droid 4-layer PCB Design</h3>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-circuit-board project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Graduate-Level Instrumentation Droid 4-layer PCB Design</h3>
                         <p class="project-description">
                             Designed and built a custom 4-layer PCB combining an Arduino microcontroller and a slammer circuit to characterize the Thevenin equivalent of power sources. The board included DAC, ADC, MOSFET switching, smart LEDs, and I2C communication. Debugged bootloading issues, validated signal integrity, and performed performance testing with external power sources. Independently tackled graduate-level design complexity, incorporating lessons on copper pour management, signal routing, and compact dual-sided layouts under tight production timelines.
                         </p>
@@ -366,11 +380,16 @@
                                 <i class="fas fa-file-alt"></i> Documentation
                             </a>
                         </div>
+                        </div>
                     </div>
 
                     <!-- Project 4 -->
-                    <div class="project-item">
-                        <h3 class="project-title">Remote-Controlled SumoBot</h3>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-robot project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Remote-Controlled SumoBot</h3>
                         <p class="project-description">
                             Collaborated in a four-person team to design and build a remote controlled combat robot (SumoBot) using the Raspberry Pi Pico, custom PCB, and multiple embedded subsystems. Integrated IR/RF remote control, ultrasonic sensing for opponent detection, and motor control logic for reactive combat behavior. Designed and tested circuits for low-voltage battery detection, motor driver integration, and sensor input filtering. Also led 3D CAD development and iterative prototyping of mechanical components, including a competitive front ramp and wheel hubs. Conducted full hardware-software integration and oscilloscope-based diagnostics to validate system performance. Software programmed in Python.
                         </p>
@@ -388,11 +407,16 @@
                                 <i class="fab fa-github"></i> Source Code
                             </a>
                         </div>
+                        </div>
                     </div>
 
                     <!-- Project 5 -->
-                    <div class="project-item">
-                        <h3 class="project-title">Robotic Lane-Assist System with Custom Infrared Sensors</h3>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-car project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Robotic Lane-Assist System with Custom Infrared Sensors</h3>
                         <p class="project-description">
                             Developed and implemented a lane-assist system for an autonomous robotic platform. This project involved designing and fabricating custom infrared (IR) sensors for line detection, which interfaced with an Arduino microcontroller. The system's core functionality relied on processing input from these IR sensors to identify lane markings. A comparator circuit with adjustable sensitivity was incorporated to ensure reliable sensor performance across varied environmental conditions. The robot utilized this sensor data to execute programmed logic for course correction, gently guiding itself back into the lane. The project also featured visual and auditory alerts to indicate when the robot detected a lane boundary.
                         </p>
@@ -407,6 +431,7 @@
                             <a href="https://github.com/matthewgmx/Lane-Assist-Robot-Car/blob/main/LAB5.docx" class="project-link" target="_blank">
                                 <i class="fas fa-file-alt"></i> Documentation
                             </a>
+                        </div>
                         </div>
                     </div>
 
@@ -423,9 +448,14 @@
                     <!-- Experience 1 -->
                     <div class="experience-item">
                         <div class="experience-header">
-                            <h3 class="job-title">Electric Powertrain Lead Engineer</h3>
-                            <span class="company">Formula SAE Racing Team | Boulder, CO</span>
-                            <span class="duration">Aug 2024 – Present</span>
+                            <div class="experience-left">
+                                <h3 class="job-title">Electric Powertrain Lead Engineer</h3>
+                                <div class="team-name">Formula SAE Racing Team</div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="location">Boulder, CO</div>
+                                <div class="duration">Aug 2024 – Present</div>
+                            </div>
                         </div>
                         <div class="experience-content">
                             <ul class="achievements">
@@ -439,9 +469,14 @@
                     <!-- Experience 2 -->
                     <div class="experience-item">
                         <div class="experience-header">
-                            <h3 class="job-title">Electrical Engineering Intern – Mechanical, Electrical, Plumbing Team (MEP)</h3>
-                            <span class="company">Kimley Horn | Minneapolis, MN</span>
-                            <span class="duration">Jun 2025 – Aug 2025</span>
+                            <div class="experience-left">
+                                <h3 class="job-title">Electrical Engineering Intern</h3>
+                                <div class="team-name">Mechanical, Electrical, Plumbing Team (MEP) | Kimley Horn</div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="location">Minneapolis, MN</div>
+                                <div class="duration">Jun 2025 – Aug 2025</div>
+                            </div>
                         </div>
                         <div class="experience-content">
                             <ul class="achievements">
@@ -454,9 +489,14 @@
                     <!-- Experience 3 -->
                     <div class="experience-item">
                         <div class="experience-header">
-                            <h3 class="job-title">Power Engineering Intern – Station Engineering East Ohio Team</h3>
-                            <span class="company">American Electric Power | Columbus, OH</span>
-                            <span class="duration">Jun 2024 – Aug 2024</span>
+                            <div class="experience-left">
+                                <h3 class="job-title">Power Engineering Intern</h3>
+                                <div class="team-name">Station Engineering East Ohio Team | American Electric Power</div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="location">Columbus, OH</div>
+                                <div class="duration">Jun 2024 – Aug 2024</div>
+                            </div>
                         </div>
                         <div class="experience-content">
                             <ul class="achievements">
@@ -478,8 +518,7 @@
                     <div class="contact-info">
                         <h3>Let's Connect</h3>
                         <p>
-                            I'm always interested in discussing new opportunities in electrical engineering, 
-                            power systems, embedded systems development, or electric vehicle technology. Feel free to reach out!
+                            I'm always interested in discussing new opportunities and projects. Feel free to reach out!
                         </p>
                         <div class="contact-details">
                             <div class="contact-item">
