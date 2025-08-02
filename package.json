@@ -1,0 +1,33 @@
+{
+  "name": "matthew-mccardle-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Matthew Gorbold McCardle - Electrical Engineering",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=/index.html",
+    "dev": "npx live-server --port=3000 --open=/index.html --watch=./",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Upload files to your hosting provider or use GitHub Pages'"
+  },
+  "keywords": [
+    "portfolio",
+    "electrical-engineering",
+    "resume",
+    "professional",
+    "website",
+    "engineering-portfolio"
+  ],
+  "author": "Matthew Gorbold McCardle",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/portfolio/issues"
+  },
+  "homepage": "https://yourusername.github.io/portfolio/"
+}
